@@ -22,6 +22,8 @@ public class ConcreteSubject implements Subject {
 
     public void setAvailability(String availability) {
         this.availability = availability;
+        System.out.println("Availability changed from Out of Stock to Available.");
+        notifyObservers();
     }
 
     @Override

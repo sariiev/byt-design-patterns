@@ -26,13 +26,13 @@ public class ConcreteSubject implements Subject {
 
     @Override
     public void registerObserver(Observer observer) {
-        System.out.println("Observer Added: " + ((ConcreteObserver) observer).getUserName());
+        System.out.println("Observer Added: " + ((ConcreteObserver) observer).getUsername());
         observerList.add(observer);
     }
 
     @Override
     public void removeObserver(Observer observer) {
-        System.out.println("Observer Removed: " + ((ConcreteObserver) observer).getUserName());
+        System.out.println("Observer Removed: " + ((ConcreteObserver) observer).getUsername());
         observerList.remove(observer);
     }
 
